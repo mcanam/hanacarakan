@@ -1,0 +1,23 @@
+{
+  "name": "hanacarakan",
+  "version": "1.0.0",
+  "description": "javanese script converter",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcanam/hanacarakan.git"
+  },
+  "keywords": [],
+  "author": "mcanam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcanam/hanacarakan/issues"
+  },
+  "homepage": "https://github.com/mcanam/hanacarakan#readme",
+  "devDependencies": {
+    "rollup": "^2.35.1"
+  }
+}

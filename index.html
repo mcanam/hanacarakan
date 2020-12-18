@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="mcanam" />
+    <meta name="description" content="javanese script converter" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Hanacarakan</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/waves.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <aside class="intro">
+      <div class="intro_header">
+        <img src="images/app-logo.svg" alt="" class="intro_header-image" />
+        <a href="https://github.com/mcanam/hanacarakan" target="_blank" class="button_icon">
+          <img src="images/logo-github.svg" alt="" />
+        </a>
+      </div>
+      <div class="intro_body">
+        <img src="images/app-intro.svg" alt="" class="intro_body-image" />
+        <h2 class="intro_body-heading-text">Sugeng Rawuh</h2>
+        <p class="intro_body-text">
+          Hanacarakan adalah konverter daring untuk mengkonversi aksara latin
+          kedalam bentuk aksara jawa ataupun sebaliknya.
+        </p>
+      </div>
+      <div class="intro_footer">
+        <p class="intro_footer-text">made by mcanam</p>
+      </div>
+    </aside>
+
+    <main class="tab">
+      <section class="tab_nav">
+        <button class="tab_nav-button tab_nav-button-active" id="tab_btn1">Latin</button>
+        <img src="images/ios-swap.svg" alt="" class="tab_nav-image" />
+        <button class="tab_nav-button" id="tab_btn2">Aksara</button>
+      </section>
+
+      <section class="card_wrapper tab_active" id="tab1">
+        <div class="card">
+          <div class="card_header">
+            <span class="card_header-title">Latin</span>
+            <button class="button_icon" id="javanese_reset">
+              <img src="images/md-trash.svg" alt="" />
+            </button>
+          </div>
+          <div class="card_body">
+            <textarea id="javanese_input" placeholder="sugeng rawuh"></textarea>
+          </div>
+          <div class="card_footer"></div>
+        </div>
+
+        <br />
+
+        <div class="card card_blue">
+          <div class="card_header">
+            <span class="header_title">Aksara</span>
+          </div>
+          <div class="card_body">
+            <div class="output_aksara" id="javanese_output">
+              <span>sug_rwuh</span>
+            </div>
+            <div class="spinner spinner_hide">
+              <div class="bounce1"></div>
+              <div class="bounce2"></div>
+              <div class="bounce3"></div>
+            </div>
+          </div>
+          <div class="card_footer"></div>
+        </div>
+      </section>
+
+      <section class="card_wrapper" id="tab2">
+        <div class="card card_blue">
+          <div class="card_header">
+            <span class="card_header-title">Latin</span>
+          </div>
+          <div class="card_body">
+            <div class="output_latin">
+              <span id="latin_output-latin"></span>
+            </div>
+            <div class="output_aksara">
+              <span id="latin_output-aksara"></span>
+            </div>
+          </div>
+          <div class="card_footer"></div>
+        </div>
+
+        <br />
+
+        <div class="card">
+          <div class="card_header">
+            <span class="card_header-title">Aksara</span>
+            <button class="button_icon" id="latin_reset">
+              <img src="images/md-trash.svg" alt="" />
+            </button>
+            <button class="button_icon" id="latin_delete">
+              <img src="images/md-backspace.svg" alt="" />
+            </button>
+          </div>
+          <div class="card_body">
+            <div class="keypad"></div>
+          </div>
+          <div class="card_footer"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/waves.min.js"></script>
+    <script>
+      Waves.attach(".button_icon");
+      Waves.attach(".tab_nav-button");
+      Waves.attach(".keypad_button");
+      Waves.init();
+    </script>
+  </body>
+</html>
