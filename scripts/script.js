@@ -635,7 +635,32 @@ function replaceInput(inputLatin) {
     replaced += "\\";
   }
 
-  return replaced;
+  replaced = replaced.split(" ");
+  for (let i = 0; i < replaced.length; i++) {
+      if (replaced[i].startsWith("i")) {
+          replaced[i] = replaced[i].replace(/^i/, "ai");
+      } else if (replaced[i].startsWith("u")) {
+          replaced[i] = replaced[i].replace(/^u/, "au");
+      } else if (replaced[i].startsWith("[")) {
+          replaced[i] = replaced[i].replace(/^\[/, "[a");
+      } else if (replaced[i].startsWith("e")) {
+          replaced[i] = replaced[i].replace(/^e/, "ae");
+      } else if (replaced[i].startsWith("o")) {
+          replaced[i] = replaced[i].replace(/^o/, "[ao");
+      } else if (replaced[i].startsWith("ai")) {
+          replaced[i] = replaced[i].replace(/^ai/, "aai");
+      } else if (replaced[i].startsWith("au")) {
+          replaced[i] = replaced[i].replace(/^au/, "aau");
+      } else if (replaced[i].startsWith("a[")) {
+          replaced[i] = replaced[i].replace(/^\[/, "a[a");
+      } else if (replaced[i].startsWith("ae")) {
+          replaced[i] = replaced[i].replace(/^ae/, "aae");
+      } else if (replaced[i].startsWith("ao")) {
+          replaced[i] = replaced[i].replace(/^ao/, "a[ao");
+      }
+  }
+
+  return replaced.join(" ");
 }
 
 function replaceOutput(outputAksara) {
