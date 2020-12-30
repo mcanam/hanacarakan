@@ -4,12 +4,12 @@ Hanacarakan is an online converter to convert Latin characters into [Javanese sc
 
 [Github Pages](https://mcanam.github.io/hanacarakan)
 
-## Authors
+## Author
 
 * **mcanam**
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 😊
