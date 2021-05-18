@@ -10,7 +10,7 @@ export default {
   input: "src/js/index.js",
   output: [
     {
-      file: "public/script.js",
+      file: "script.js",
       format: "iife",
     },
   ],
