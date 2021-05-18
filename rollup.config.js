@@ -1,7 +1,30 @@
+import commonjs from "@rollup/plugin-commonjs";
+import resolve from "@rollup/plugin-node-resolve";
+import { babel } from "@rollup/plugin-babel";
+import { terser } from "rollup-plugin-terser";
+import postcss from "rollup-plugin-postcss";
+import autoprefixer from "autoprefixer";
+import cssnano from "cssnano";
+
 export default {
-  input: 'src/index.js',
-  output: {
-    file: 'scripts/script.js',
-    format: 'cjs'
-  }
+  input: "src/js/index.js",
+  output: [
+    {
+      file: "public/script.js",
+      format: "iife",
+    },
+  ],
+  plugins: [
+    resolve(),
+		commonjs(),
+    postcss({
+      extract: "style.css",
+      plugins: [autoprefixer(), cssnano()],
+    }),
+    babel({ 
+      babelHelpers: "bundled",
+      presets: ["@babel/preset-env"]
+    }),
+    terser()
+  ],
 };
