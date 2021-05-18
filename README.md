@@ -1,4 +1,4 @@
-<p align="center"><img src="public/assets/images/preview.jpg" width="100%"></p>
+<p align="center"><img src="assets/images/preview.jpg" width="100%"></p>
 
 ## Hanacarakan
 [Try it now >>](https://mcanam.github.io/hanacarakan/)
