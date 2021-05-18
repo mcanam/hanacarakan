@@ -1,0 +1,20 @@
+/* button icon */
+
+.button_icon {
+  width: 40px;
+  height: 40px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.2s;
+
+  & > img {
+    width: 20px;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}

@@ -1,0 +1,61 @@
+.keypad {
+  width: 100%;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &__title {
+    margin-left: 20px;
+  }
+
+  &_button {
+    color: #fff;
+    width: calc(20% - 40px);
+    padding: 20px;
+    margin: 20px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2196f3;
+    border-radius: 5px;
+    transition: 0.2s;
+
+    & > span:first-child {
+      font-family: hanacaraka;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  &_wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .keypad {
+    &_title {
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    &_button {
+      width: calc(25% - 10px);
+      padding: 10px;
+      margin: 5px;
+    }
+
+    & > span:first-child {
+      font-size: 1em;
+    }
+  }
+}

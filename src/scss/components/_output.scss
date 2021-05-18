@@ -1,0 +1,22 @@
+.output {
+  &_aksara,
+  &_latin {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  &_aksara {
+    font-family: hanacaraka;
+    font-size: 1.5em;
+    line-height: 3;
+  }
+
+  &_latin {
+    font-size: 1.5em;
+  }
+
+  &_hide {
+    display: none;
+  }
+}

@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html lang="id">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="mcanam" />
     <meta name="description" content="javanese script converter" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="msapplication-tap-highlight" content="no" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
     <title>Hanacarakan</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/waves.min.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <aside class="intro">
       <div class="intro_header">
-        <img src="images/app-logo.svg" alt="" class="intro_header-image" />
-        <a
-          href="https://github.com/mcanam/hanacarakan"
-          target="_blank"
-          class="button_icon"
-        >
-          <img src="images/logo-github.svg" alt="" />
+        <img src="assets/images/app-logo.svg" alt="" class="intro_header-image" />
+        <a href="https://github.com/mcanam/hanacarakan" target="_blank" class="button_icon">
+          <img src="assets/images/logo-github.svg" alt="" />
         </a>
       </div>
       <div class="intro_body">
-        <img src="images/app-intro.svg" alt="" class="intro_body-image" />
+        <img src="assets/images/app-intro.svg" alt="" class="intro_body-image" />
         <h2 class="intro_body-heading-text">Sugeng Rawuh</h2>
         <p class="intro_body-text">
           Hanacarakan adalah konverter daring untuk mengkonversi aksara latin
@@ -47,10 +44,8 @@
 
     <main class="tab">
       <section class="tab_nav">
-        <button class="tab_nav-button tab_nav-button-active" id="tab_btn1">
-          Latin
-        </button>
-        <img src="images/ios-swap.svg" alt="" class="tab_nav-image" />
+        <button class="tab_nav-button tab_nav-button-active" id="tab_btn1">Latin</button>
+        <img src="assets/images/ios-swap.svg" alt="" class="tab_nav-image" />
         <button class="tab_nav-button" id="tab_btn2">Aksara</button>
       </section>
 
@@ -59,16 +54,11 @@
           <div class="card_header">
             <span class="card_header-title">Latin</span>
             <button class="button_icon" id="javanese_reset">
-              <img src="images/md-trash.svg" alt="" />
+              <img src="assets/images/md-trash.svg" alt="" />
             </button>
           </div>
           <div class="card_body">
-            <textarea
-              id="javanese_input"
-              placeholder="sugeng rawuh"
-              spellcheck="false"
-              autocapitalize="none"
-            ></textarea>
+            <textarea id="javanese_input" placeholder="sugeng rawuh" spellcheck="false" autocapitalize="off"></textarea>
           </div>
           <div class="card_footer"></div>
         </div>
@@ -115,10 +105,10 @@
           <div class="card_header">
             <span class="card_header-title">Aksara</span>
             <button class="button_icon" id="latin_reset">
-              <img src="images/md-trash.svg" alt="" />
+              <img src="assets/images/md-trash.svg" alt="" />
             </button>
             <button class="button_icon" id="latin_delete">
-              <img src="images/md-backspace.svg" alt="" />
+              <img src="assets/images/md-backspace.svg" alt="" />
             </button>
           </div>
           <div class="card_body">
@@ -129,13 +119,7 @@
       </section>
     </main>
 
-    <script src="scripts/script.js"></script>
-    <script src="scripts/waves.min.js"></script>
-    <script>
-      Waves.attach(".button_icon");
-      Waves.attach(".tab_nav-button");
-      Waves.attach(".keypad_button");
-      Waves.init();
-    </script>
+    <script src="script.js"></script>
   </body>
+
 </html>

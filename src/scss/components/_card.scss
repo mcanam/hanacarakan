@@ -1,0 +1,53 @@
+.card {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 10px 10px rgba(55, 84, 170, 0.2);
+
+  &_header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+    &-title {
+      font-size: 0.8em;
+      margin-right: auto;
+    }
+  }
+
+  &_body {
+    width: 100%;
+    padding: 0 20px;
+
+    & > textarea {
+      font-size: 1.5em;
+      width: 100%;
+    }
+  }
+
+  &_footer {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &_blue {
+    color: #fff;
+    background-color: #2196f3;
+  }
+
+  &_wrapper {
+    width: 100%;
+    padding: 20px 40px 40px 40px;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .card_wrapper {
+    padding: 20px;
+  }
+}

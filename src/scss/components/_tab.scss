@@ -1,0 +1,52 @@
+.tab {
+  width: calc(100% - 300px);
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &_nav {
+    width: 100%;
+    height: 80px;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-button {
+      color: #2196f3;
+      padding: 6px 20px;
+      border: 1px solid #2196f3;
+      border-radius: 50px;
+      background-color: rgba(0, 0, 0, 0);
+      transition: 0.2s;
+
+      &-active {
+        color: #fff;
+        background-color: #2196f3;
+      }
+    }
+
+    &-image {
+      width: 30px;
+    }
+  }
+
+  &_active {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .tab {
+    width: 100%;
+    overflow: unset;
+
+    &_nav {
+      padding: 0 40px;
+
+      &-image {
+        width: 20px;
+      }
+    }
+  }
+}
